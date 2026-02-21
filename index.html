@@ -582,7 +582,7 @@
     cursor: pointer;
   }
 
-  .btn-submit {
+  .btn-submit-unused {
     width: 100%;
     background: var(--navy);
     color: var(--white);
@@ -942,12 +942,6 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Form submit → WhatsApp
-  function handleSubmit(e) {
-    e.preventDefault();
-    const nome = e.target.querySelector('input[type="text"]').value;
-    const tel = e.target.querySelector('input[type="tel"]').value;
-    const tipo = e.target.querySelector('select').value;
-    const msg = e.target.querySelector('textarea').value;
-
-    const texto = 
+</script>
+</body>
+</html>
