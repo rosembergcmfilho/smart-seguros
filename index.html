@@ -924,28 +924,78 @@
 
 
 <!-- INSTAGRAM -->
-<section id="instagram" style="background:#0d2545;padding:80px 60px;text-align:center;">
+<style>
+  .ig-section { background: #081929; padding: 90px 60px; text-align: center; }
+  .ig-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; max-width: 1100px; margin: 0 auto 40px; }
+  .ig-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #0d2545;
+    border: 1px solid rgba(200,145,58,0.15);
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .ig-card iframe,
+  .ig-card .instagram-media {
+    flex: 1;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+  .ig-footer {
+    background: #0d2545;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(200,145,58,0.15);
+    flex-shrink: 0;
+  }
+  .ig-footer a {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.78rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+  }
+  .ig-footer a:hover { color: #c8913a; }
+  @media (max-width: 900px) { .ig-grid { grid-template-columns: repeat(2,1fr); } .ig-section { padding: 60px 20px; } }
+  @media (max-width: 500px) { .ig-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section id="instagram" class="ig-section">
   <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.12em;color:#c8913a;font-weight:600;margin-bottom:12px;">Redes sociais</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:white;margin-bottom:12px;">Siga a Smart Seguros</h2>
-  <p style="color:rgba(255,255,255,0.55);margin-bottom:48px;font-size:0.95rem;">Acompanhe nossas novidades e dicas sobre seguros no Instagram</p>
+  <p style="color:rgba(255,255,255,0.45);margin-bottom:48px;font-size:0.95rem;">Acompanhe nossas novidades e dicas sobre seguros no Instagram</p>
 
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1100px;margin:0 auto;">
-    <div style="border-radius:12px;overflow:hidden;background:#0a1e3d;">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DT0VEr3kRSZ/" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+  <div class="ig-grid">
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DT0VEr3kRSZ/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;padding:0;width:100%;min-width:0;"></blockquote>
+      <div class="ig-footer"><a href="https://www.instagram.com/p/DT0VEr3kRSZ/" target="_blank">Ver no Instagram →</a></div>
     </div>
-    <div style="border-radius:12px;overflow:hidden;background:#0a1e3d;">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPC07OrjTiq/" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DPC07OrjTiq/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;padding:0;width:100%;min-width:0;"></blockquote>
+      <div class="ig-footer"><a href="https://www.instagram.com/p/DPC07OrjTiq/" target="_blank">Ver no Instagram →</a></div>
     </div>
-    <div style="border-radius:12px;overflow:hidden;background:#0a1e3d;">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTwNB6eDRFb/" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DTwNB6eDRFb/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;padding:0;width:100%;min-width:0;"></blockquote>
+      <div class="ig-footer"><a href="https://www.instagram.com/p/DTwNB6eDRFb/" target="_blank">Ver no Instagram →</a></div>
     </div>
-    <div style="border-radius:12px;overflow:hidden;background:#0a1e3d;">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJywG2_upeQ/" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;margin:0;max-width:100%;min-width:0;padding:0;width:100%;"></blockquote>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DJywG2_upeQ/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;padding:0;width:100%;min-width:0;"></blockquote>
+      <div class="ig-footer"><a href="https://www.instagram.com/p/DJywG2_upeQ/" target="_blank">Ver no Instagram →</a></div>
     </div>
   </div>
 
-  <a href="https://instagram.com/smartsegurospe" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:40px;color:#c8913a;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(200,145,58,0.4);padding-bottom:2px;">
-    Ver perfil completo no Instagram →
+  <a href="https://instagram.com/smartsegurospe" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#c8913a;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(200,145,58,0.4);padding-bottom:2px;font-size:0.9rem;">
+    📷 Ver perfil completo no Instagram
   </a>
 </section>
 <script async src="//www.instagram.com/embed.js"></script>
